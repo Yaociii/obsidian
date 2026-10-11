@@ -1,20 +1,96 @@
-# Device-specific workspace and caches
-.obsidian/workspace*.json
-.obsidian/cache/
-.obsidian/workspaces.json
+# Obsidian: sync only reviewed, portable preferences and visual assets.
+# Plugin code can be reinstalled from community-plugins.json.
+# Plugin data, credentials, databases and local paths stay on this device.
+/.obsidian/*
+!/.obsidian/app.json
+!/.obsidian/appearance.json
+!/.obsidian/community-plugins.json
+!/.obsidian/core-plugins.json
+!/.obsidian/themes/
+!/.obsidian/snippets/
 .obsidian-git-data
 .trash/
-.DS_Store
-Thumbs.db
 
-# Plugin settings can contain credentials and local paths
-.obsidian/plugins/*/data.json
+# AI chat history, attachments, memory and local agent state.
+/copilot/
+/Codex Archives/
+/Codex Attachments/
+.codex/
+.claude/
+.cursor/
+.aider*
 
-# Local credentials and agent runtime state
+# Put notes that must never sync in one of these vault-root folders.
+/Private/
+/private/
+/私密/
+/个人信息/
+
+# Environment files: even example files may accidentally contain real keys.
 .env
 .env.*
-!.env.example
-.codex/
+*.env
+*.env.*
+.envrc
 
-# Git plugin generates this authentication helper at runtime
-.obsidian/plugins/obsidian-git/obsidian_askpass.sh
+# Authentication, cloud credentials and private keys (at any depth).
+.ssh/
+.aws/
+.azure/
+.gcloud/
+.git-credentials
+.gitconfig
+.netrc
+_netrc
+.npmrc
+.pypirc
+auth.json
+auth.json.*
+credentials.json
+credentials.json.*
+credentials.yaml
+credentials.yml
+secrets.json
+secrets.yaml
+secrets.yml
+secrets.toml
+tokens.json
+service-account*.json
+service_account*.json
+client_secret*.json
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+*.1password
+
+# Logs, caches, databases, backups and temporary working files.
+*.log
+*.log.*
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+.setup-backups/
+node_modules/
+__pycache__/
+.venv/
+.DS_Store
+Thumbs.db
+Desktop.ini
