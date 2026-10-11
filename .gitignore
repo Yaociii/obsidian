@@ -15,3 +15,6 @@ Thumbs.db
 .env.*
 !.env.example
 .codex/
+
+# Git plugin generates this authentication helper at runtime
+.obsidian/plugins/obsidian-git/obsidian_askpass.sh
