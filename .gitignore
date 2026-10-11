@@ -1,0 +1,17 @@
+# Device-specific workspace and caches
+.obsidian/workspace*.json
+.obsidian/cache/
+.obsidian/workspaces.json
+.obsidian-git-data
+.trash/
+.DS_Store
+Thumbs.db
+
+# Plugin settings can contain credentials and local paths
+.obsidian/plugins/*/data.json
+
+# Local credentials and agent runtime state
+.env
+.env.*
+!.env.example
+.codex/
